@@ -1,3 +1,4 @@
 .env
 *.cfg
 auth_vars.yml
+devices
