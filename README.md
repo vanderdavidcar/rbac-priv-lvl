@@ -1,4 +1,11 @@
-# Restrict access for users with RBAC or low privilege level(ios, nxos, os10)
+# Restrict access for users with RBAC or Privilege Level on IOS, NXOS and OS10
+
+For users in your network environment that do not authenticate on TACACS or some platform that provides security policy management to secure network access for end users and devices.
+
+This is a way to protect your environment if you suffering a brute force ou creadentials leaking
+
+I did this programm to create a RBAC and minimum Privilege Level and https://github.com/vanderdavidcar/delete-local-users to check different users that can be removed in a daily basis with a jobs task.
+
 
 # auth_vars1.yml
 Changes values for yours users and password to have a loop in jinja2 templates<br/>
