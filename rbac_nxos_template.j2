@@ -1,0 +1,19 @@
+!
+{% for USERS in USERS %}
+no username {{ USERS['usr'] }}
+{% endfor %}
+!
+role name svc-users
+description Role for service users to get some commands in network devices
+rule 1 permit command terminal length 0
+rule 2 permit command show version
+rule 3 permit command show inventory
+rule 4 permit command show running-config
+rule 5 permit command show startup-config
+rule 6 permit command show lldp neighbor
+rule 7 permit command show cdp neighbor
+!
+{% for USERS in USERS %}
+username {{ USERS['usr'] }} role svc-users password {{ USERS['pwd'] }}
+{% endfor %}
+!

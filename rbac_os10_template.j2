@@ -1,0 +1,8 @@
+!
+privilege exec priv-lvl 7 show
+privilege exec priv-lvl 7 terminal!
+!
+{% for USERS in USERS %}
+username {{ USERS['usr'] }} password {{ USERS['pwd'] }} role netadmin priv-lvl 7
+{% endfor %}
+!

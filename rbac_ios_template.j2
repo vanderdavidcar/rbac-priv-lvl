@@ -1,0 +1,15 @@
+!
+alias exec show-startup-config show startup-config
+!
+privilege exec all level 7 show running-config view full
+privilege exec level 7 terminal length 0
+privilege exec level 7 show version
+privilege exec level 7 show inventory
+privilege exec level 7 show startup-config
+privilege exec all level 7 show running-config
+privilege exec level 7 show
+!
+{% for USERS in USERS %}
+username {{ USERS['usr'] }} privilege 7 secret {{ USERS['pwd'] }}
+{% endfor %}
+!
