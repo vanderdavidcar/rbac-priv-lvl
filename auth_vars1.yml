@@ -1,0 +1,8 @@
+---
+# vars file for jinja2
+  USERS:
+  - usr: backup.oxidized
+    pwd: so_eu_sei
+  - usr: netbox
+    pwd: so_eu_sei
+  
