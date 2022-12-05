@@ -16,7 +16,7 @@ A modulo imported in files ".py" which needed a credentials to connect on device
 
 ## auth_vars1.yml
 
-Changes values for yours users and password to have a loop in jinja2 templates</br>
+Change values for yours users and password to have a loop in jinja2 templates</br>
 On file create_scripts.py in line 11 change auth_vars.yml to auth_vars1.yml or rename file.
 
 ## create_scripts.py
