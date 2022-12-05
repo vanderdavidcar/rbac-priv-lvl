@@ -6,6 +6,10 @@ This is a way to protect your environment if you suffering a brute force ou crea
 
 I did this programm to create a RBAC and minimum Privilege Level and <https://github.com/vanderdavidcar/delete-local-users> to check different users that can be removed in a daily basis with a jobs task.
 
+## Dependencies: Install the requirements to have all dependencies used
+
+$ pip install -r requirements.txt
+
 ## .env
 
 To protect credentials leaking, create a .env file with variables that will be used to connect on devices (USER_LAB/PASS_LAB).
