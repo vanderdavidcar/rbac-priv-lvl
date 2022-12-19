@@ -1,14 +1,10 @@
 # Restrict access for users with RBAC or Privilege Level on IOS, NXOS and OS10
 
-For users in your network environment that do not authenticate on TACACS or some platform that provides security policy management to secure network access for end users and devices.
+For users in your network environment do not authenticate on TACACS or some platform that provides security policy management to secure network access for end users and devices.
 
 This is a way to protect your environment if you suffering a brute force ou creadentials leaking
 
-I did this programm to create a RBAC and minimum Privilege Level and <https://github.com/vanderdavidcar/delete-local-users> to check different users that can be removed in a daily basis with a jobs task.
-
-## Dependencies: Install the requirements to have all dependencies used
-
-$ pip install -r requirements.txt
+I did this code to create a RBAC and minimum Privilege Level and <https://github.com/vanderdavidcar/delete-local-users> to check different users that can be removed in a daily basis with a jobs task.
 
 ## .env
 
@@ -16,7 +12,7 @@ To protect credentials leaking, create a .env file with variables that will be u
 
 ## net_conn.py
 
-A modulo imported in files ".py" which needed a credentials to connect on devices.
+A module imported in files ".py" which needed a credentials to connect on devices.
 
 ## auth_vars1.yml
 
