@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 import yaml
 
 # List to do loop 
-versions = ["nxos", "ios", "os10"]
+versions = ["nxos", "ios", "dellos10"]
 
 #Load data from YAML file into Python dictionary
 config = yaml.full_load(open('./auth_vars.yml'))
@@ -18,6 +18,4 @@ for model in versions:
     output = template.render(config)
     scriptFile = open(f'rbac_{model}.cfg', "w+")
     scriptFile.write(output)
-    print(f'Created script FileName rbac_{model}.cfg') 
-
-
+    print(f'Created script FileName rbac_{model}.cfg')
