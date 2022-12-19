@@ -14,6 +14,7 @@ pass_os10 = os.getenv("PASS_OS10")
 
 start_time = datetime.now()
 
+# Used if you need to type user and password
 #username = input('Enter your SSH username: ')
 #password = getpass()
 
