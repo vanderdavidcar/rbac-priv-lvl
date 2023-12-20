@@ -1,4 +1,7 @@
-# Restrict access for users with RBAC or Privilege Level on IOS, NXOS and OS10
+# Disclaimer
+I'm not a dev yet, this is NOT fancy code. It does work (for me at least!) though. You can seriously mess up your producition environment with my scripts if you don't know what you're doing. I take no responsibility for that :)</br>
+
+## Restrict access for users with RBAC or Privilege Level on IOS, NXOS and OS10
 
 For users in your network environment do not authenticate on TACACS or some platform that provides security policy management to secure network access for end users and devices.
 
